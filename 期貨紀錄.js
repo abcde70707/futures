@@ -1,5 +1,5 @@
 function loadjson() {
-  var cors = "https://joke-api-strict-cors.appspot.com/jokes/random";
+  var cors = "https://cors-anywhere.herokuapp.com/";
   var output = "<tbody><tr>";
   var jsonurl = cors+"https://abcde70707.github.io/futures/期貨紀錄.json";
   var jsonurlobj = new XMLHttpRequest();
