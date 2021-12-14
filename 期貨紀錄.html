@@ -12,15 +12,16 @@
 </head>
 
 <body>
-  <div>
-    <input type="number" id="year" min="0">
-    <input type="number" id="month" min="1" max="12">
-    <input type="number" id="day" min="1" max="31">
-    <input type="number" id="point">
-    <input type="text" id="reason">
+  <div id="topinput">
+    <input type="number" id="year" min="0" placeholder="西元">
+    <input type="number" id="month" min="1" max="12" placeholder="月">
+    <input type="number" id="day" min="1" max="31" placeholder="日">
+    <input type="number" id="point" placeholder="點數">
+    <input type="text" id="reason" placeholder="理由">
     <input type="button" id="addbutton" value="添加">
     <input type="button" id="clearbutton" value="清空">
   </div>
+  <div id="display"></div>
 </body>
 
 </html>
