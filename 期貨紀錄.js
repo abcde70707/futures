@@ -1,6 +1,7 @@
 function loadjson() {
+  var cors = "https://joke-api-strict-cors.appspot.com/jokes/random";
   var output = "<tbody><tr>";
-  var jsonurl = "https://abcde70707.github.io/futures/期貨紀錄.json";
+  var jsonurl = cors+"https://abcde70707.github.io/futures/期貨紀錄.json";
   var jsonurlobj = new XMLHttpRequest();
   jsonurlobj.open("get", jsonurl);
   jsonurlobj.send(null);
