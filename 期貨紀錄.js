@@ -7,7 +7,7 @@ function loadjson() {
   jsonurlobj.send(null);
   jsonurlobj.onload = function () {
     if (jsonurlobj.status == 200) {
-      var obj = JSON.parse(jsonurlobj.responseText);
+      var obj = JSON.parse(JSON.stringify(jsonurlobj.responseText));
       for (var i in obj) {
         output += "<td>" + obj[i].year + "/" + obj[i].month + "/" + obj[i].day + "<td>" + "<td>" + obj[i].point + "<td>" + "<td>" + obj[i].reason + "<td>";
       }
