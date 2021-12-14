@@ -1,6 +1,6 @@
 function loadjson() {
   var output = "<tbody><tr>";
-  var jsonurl = "期貨紀錄.json";
+  var jsonurl = "https://abcde70707.github.io/futures/期貨紀錄.json";
   var jsonurlobj = new XMLHttpRequest();
   jsonurlobj.open("get", jsonurl);
   jsonurlobj.send(null);
