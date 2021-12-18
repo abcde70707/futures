@@ -3,7 +3,7 @@
     "year": 2021,
     "month": 10,
     "day": 4,
-    "weak": 1;
+    "weak": 1,
     "point": -66,
     "reason": ""
   },
@@ -11,7 +11,7 @@
     "year": 2021,
     "month": 11,
     "day": 24,
-    "weak": 3;
+    "weak": 3,
     "point": 12,
     "reason": ""
   },
@@ -19,7 +19,7 @@
     "year": 2021,
     "month": 11,
     "day": 25,
-    "weak": 4;
+    "weak": 4,
     "point": -14,
     "reason": ""
   },
@@ -27,7 +27,7 @@
     "year": 2021,
     "month": 11,
     "day": 26,
-    "weak": 5;
+    "weak": 5,
     "point": -22,
     "reason": ""
   },
@@ -35,7 +35,7 @@
     "year": 2021,
     "month": 11,
     "day": 29,
-    "weak": 1;
+    "weak": 1,
     "point": -60,
     "reason": ""
   },
@@ -43,7 +43,7 @@
     "year": 2021,
     "month": 12,
     "day": 6,
-    "weak": 1;
+    "weak": 1,
     "point": 30,
     "reason": ""
   },
@@ -51,7 +51,7 @@
     "year": 2021,
     "month": 12,
     "day": 7,
-    "weak": 2;
+    "weak": 2,
     "point": -11,
     "reason": ""
   },
@@ -59,7 +59,7 @@
     "year": 2021,
     "month": 12,
     "day": 8,
-    "weak": 3;
+    "weak": 3,
     "point": -26,
     "reason": ""
   },
@@ -67,7 +67,7 @@
     "year": 2021,
     "month": 12,
     "day": 10,
-    "weak": 5;
+    "weak": 5,
     "point": 3,
     "reason": ""
   },
@@ -75,7 +75,7 @@
     "year": 2021,
     "month": 12,
     "day": 13,
-    "weak": 1;
+    "weak": 1,
     "point": -14,
     "reason": ""
   },
@@ -83,7 +83,7 @@
     "year": 2021,
     "month": 12,
     "day": 15,
-    "weak": 3;
+    "weak": 3,
     "point": -53,
     "reason": ""
   },
@@ -91,7 +91,7 @@
     "year": 2021,
     "month": 12,
     "day": 17,
-    "weak": 5;
+    "weak": 5,
     "point": -30,
     "reason": ""
   }
