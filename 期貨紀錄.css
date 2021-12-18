@@ -1,8 +1,20 @@
+body{
+  background-color: #282828;
+}
+/*全部的input*/
 input{
   width: 100px;
   height: 30px;
   font-size: 20px;
+  text-align: right;
   margin-right: 5px;
+  background-color: #FFCCCC;
+}
+/*預設文字*/
+::placeholder{
+  font-weight: bold;
+  text-align: left;
+  color: #484848;
 }
 /*理由欄位*/
 input[type = "text"]{
@@ -12,9 +24,77 @@ input[type = "text"]{
 input[type = "button"]{
   width: 80px;
   height: 35px; 
+  background-color: #FF6666;
+  color: #336666;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 15%;
+  text-align: center;
 }
+/*日期查詢列的數字欄*/
+div#selectrange input[type="number"]{
+  width: 75px;
+}
+/*上面新增清空列的位置*/
 #topinput{
   display: flex;
   justify-content: center; 
   align-items: center;
+}
+/*上面日期查詢列的位置*/
+#selectrange{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+/*全部的table*/
+table{
+  border-collapse:collapse;
+  background-color: #336699;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 70%;
+}
+/*全部的tr*/
+tr{
+  height: 10px;
+}
+/*全部的td*/
+td{
+  border: 2px solid #A8A8A8;
+  height: inherit;
+  font-size: 40px;
+  color: #282828;
+}
+/*第一格td*/
+td:first-child{
+  width: calc(70%/7*2.5);
+  text-align: center;
+}
+/*第二格td*/
+td:nth-child(2){
+  width: calc(70%/7*1);
+  text-align: center;
+}
+/*第四格td*/
+td:nth-child(4){
+  width: calc(70%/7*0.5);
+  background-color: #FFFF66;
+}
+/*刪除按鈕*/
+input[value = "刪除"]{
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  bottom: 1px;
+  font-size: 30px;
+  color: #663333;
+  background-color: #FFFF66;
+  border: none;
+}
+/**/
+#statistics{
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
