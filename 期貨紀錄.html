@@ -3,25 +3,97 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://abcde70707.github.io/futures/%E6%9C%9F%E8%B2%A8%E7%B4%80%E9%8C%84.css">
+  <link rel="stylesheet" type="text/css" href="期貨紀錄.css">
   <!--載入css-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--載入jquery-->
-  <script src="https://abcde70707.github.io/futures/期貨紀錄.js"></script>
+  <script type="text/javascript" src="期貨紀錄.js"></script>
   <!--載入javascript-->
 </head>
 
 <body>
   <div id="topinput">
     <input type="number" id="year" min="0" placeholder="西元">
-    <input type="number" id="month" min="1" max="12" placeholder="月">
-    <input type="number" id="day" min="1" max="31" placeholder="日">
+    <input type="number" id="month" list="typelistmonth" placeholder="月">
+    <input type="number" id="day" list="typelistday" placeholder="日">
+    <input type="number" id="weak" list="typelistweak" placeholder="星期">
     <input type="number" id="point" placeholder="點數">
     <input type="text" id="reason" placeholder="理由">
     <input type="button" id="addbutton" value="添加">
     <input type="button" id="clearbutton" value="清空">
   </div>
-  <div id="display"></div>
+  <br>
+  <div id="selectrange">
+    <input type="number" id="years1" min="0" placeholder="西元">
+    <input type="number" id="months1" list="typelistmonth" placeholder="月">
+    <input type="number" id="days1" list="typelistday" placeholder="日">
+    <span style="color: white;font-size: 30px;">~</span>
+    <input style="margin-left: 6px;" type="number" id="years2" min="0" placeholder="西元">
+    <input type="number" id="months2" list="typelistmonth" placeholder="月">
+    <input type="number" id="days2" list="typelistday" placeholder="日">
+    <input type="button" id="searchbutton" value="查詢">
+    <input type="button" id="clearsearchbutton" value="清空">
+    <input type="button" id="printallbutton" value="全部">
+  </div>
+  <hr>
+  <div id="statistics"><span id="grandtotal"></span><span id="average"></span></div>
+  <datalist id="typelistmonth">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+  </datalist>
+  <datalist id="typelistday">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+  </datalist>
+  <datalist id="typelistweak">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </datalist>
+  <table>
+    <tbody id="display"></tbody>
+  </table>
 </body>
 
 </html>
