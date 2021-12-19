@@ -89,8 +89,7 @@ function add() {
     "point": addpoint,
     "reason": addreason
   }
-  var fs = require('fs');
-  fs.readFile('期貨紀錄.js', function (err, data) {
+  $.getJSON('期貨紀錄.json', function (err, data) {
     if (err) {
       return console.error(err);
     }
@@ -99,13 +98,13 @@ function add() {
     newdata.data.push(adddata);
     console.log(newdata.data);
     var str = JSON.stringify(newdata);
-    fs.writeFile('期貨紀錄.js', str, function (err) {
+    /*fs.writeFile('期貨紀錄.json', str, function (err) {
       if (err) {
         console.error(err);
       }
       console.log('-----------新增成功-----------')
-    })
-  })
+    })*/
+  });
 }
 //清空資料輸入列
 function clearadd() {
