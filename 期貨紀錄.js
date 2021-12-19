@@ -74,7 +74,7 @@ function loadjson() {
   });
 }
 //新增資料
-function add() {
+/*function add() {
   var addyear = document.getElementById("year").value;
   var addmonth = document.getElementById("month").value;
   var addday = document.getElementById("day").value;
@@ -89,23 +89,20 @@ function add() {
     "point": addpoint,
     "reason": addreason
   }
-  $.getJSON('期貨紀錄.json', function (/*err, */data) {
-    /*if (err) {
-      return console.error(err);
-    }*/
+  $.getJSON('期貨紀錄.json', function (data) {
     var newdata = data.toString();
     newdata = JSON.parse(newdata);
     newdata.data.push(adddata);
     console.log(newdata.data);
-    var str = JSON.stringify(newdata);
+    var str = JSON.stringify(newdata);*/
     /*fs.writeFile('期貨紀錄.json', str, function (err) {
       if (err) {
         console.error(err);
       }
       console.log('-----------新增成功-----------')
     })*/
-  });
-}
+/*  });
+}*/
 //清空資料輸入列
 function clearadd() {
   document.getElementById("year").value = "";
