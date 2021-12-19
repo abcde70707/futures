@@ -1,4 +1,4 @@
-var jsonUrl = "https://abcde70707.github.io/futures/期貨紀錄.json";
+var jsonUrl = "期貨紀錄.json";
 //印出全部資料
 function loadjson() {
   var content;
