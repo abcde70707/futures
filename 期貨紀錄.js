@@ -1,4 +1,4 @@
-var jsonUrl = "期貨紀錄.json";
+var jsonUrl = "https://abcde70707.github.io/futures/期貨紀錄.json";
 //印出全部資料
 function loadjson() {
   var content;
@@ -72,6 +72,40 @@ function loadjson() {
     $("tbody").empty();
     $("#display").append(content);
   });
+}
+//新增資料
+function add() {
+  var addyear = document.getElementById("year").value;
+  var addmonth = document.getElementById("month").value;
+  var addday = document.getElementById("day").value;
+  var addweak = document.getElementById("weak").value;
+  var addpoint = document.getElementById("point").value;
+  var addreason = document.getElementById("reason").value;
+  var adddata = {
+    "year": addyear,
+    "month": addmonth,
+    "day": addday,
+    "weak": addweak,
+    "point": addpoint,
+    "reason": addreason
+  }
+  var fs = require('fs');
+  fs.readFile('期貨紀錄.js', function (err, data) {
+    if (err) {
+      return console.error(err);
+    }
+    var newdata = data.toString();
+    newdata = JSON.parse(newdata);
+    newdata.data.push(adddata);
+    console.log(newdata.data);
+    var str = JSON.stringify(newdata);
+    fs.writeFile('期貨紀錄.js', str, function (err) {
+      if (err) {
+        console.error(err);
+      }
+      console.log('-----------新增成功-----------')
+    })
+  })
 }
 //清空資料輸入列
 function clearadd() {
@@ -192,6 +226,8 @@ function start() {
   searchbutton.addEventListener("click", search, false);
   var clearsearchbutton = document.getElementById("clearsearchbutton");
   clearsearchbutton.addEventListener("click", clearsearch, false);
+  var addbutton = document.getElementById("addbutton");
+  addbutton.addEventListener("click", add, false);
   var clearaddbutton = document.getElementById("clearbutton");
   clearaddbutton.addEventListener("click", clearadd, false);
   var printallbutton = document.getElementById("printallbutton");
