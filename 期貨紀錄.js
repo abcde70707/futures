@@ -222,8 +222,8 @@ function start() {
   searchbutton.addEventListener("click", search, false);
   var clearsearchbutton = document.getElementById("clearsearchbutton");
   clearsearchbutton.addEventListener("click", clearsearch, false);
-  var addbutton = document.getElementById("addbutton");
-  addbutton.addEventListener("click", add, false);
+  /*var addbutton = document.getElementById("addbutton");
+  addbutton.addEventListener("click", add, false);*/
   var clearaddbutton = document.getElementById("clearbutton");
   clearaddbutton.addEventListener("click", clearadd, false);
   var printallbutton = document.getElementById("printallbutton");
