@@ -89,10 +89,10 @@ function add() {
     "point": addpoint,
     "reason": addreason
   }
-  $.getJSON('期貨紀錄.json', function (err, data) {
-    if (err) {
+  $.getJSON('期貨紀錄.json', function (/*err, */data) {
+    /*if (err) {
       return console.error(err);
-    }
+    }*/
     var newdata = data.toString();
     newdata = JSON.parse(newdata);
     newdata.data.push(adddata);
