@@ -622,5 +622,13 @@
     "weak": 3,
     "point": 10,
     "reason": ""
+  },
+  {
+    "year": 2022,
+    "month": 6,
+    "day": 23,
+    "weak": 4,
+    "point": -73,
+    "reason": ""
   }
 ]
